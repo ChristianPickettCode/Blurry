@@ -26,9 +26,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X2m-fK-tuk">
-                                <rect key="frame" x="136" y="117" width="46" height="57"/>
+                                <rect key="frame" x="121" y="305" width="114" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Upload a picture"/>
                                 <connections>
                                     <action selector="btn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TQW-zB-kj7"/>
                                     <segue destination="hsO-Pb-7U9" kind="show" id="g1R-AY-kFb"/>
