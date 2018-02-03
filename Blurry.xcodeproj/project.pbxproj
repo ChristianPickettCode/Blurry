@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		98E05AA2202667920034D5B5 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E05AA1202667920034D5B5 /* EditViewController.swift */; };
 		9EBF0FB420265AEE00AA7AEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EBF0FB320265AEE00AA7AEC /* AppDelegate.swift */; };
 		9EBF0FB620265AEE00AA7AEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EBF0FB520265AEE00AA7AEC /* ViewController.swift */; };
 		9EBF0FB920265AEE00AA7AEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EBF0FB720265AEE00AA7AEC /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		98E05AA1202667920034D5B5 /* EditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 		9EBF0FB020265AEE00AA7AEC /* Blurry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blurry.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EBF0FB320265AEE00AA7AEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9EBF0FB520265AEE00AA7AEC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 				9EBF0FB320265AEE00AA7AEC /* AppDelegate.swift */,
 				9EBF0FB520265AEE00AA7AEC /* ViewController.swift */,
 				9EBF0FB720265AEE00AA7AEC /* Main.storyboard */,
+				98E05AA1202667920034D5B5 /* EditViewController.swift */,
 				9EBF0FBA20265AEE00AA7AEC /* Assets.xcassets */,
 				9EBF0FBC20265AEE00AA7AEC /* LaunchScreen.storyboard */,
 				9EBF0FBF20265AEE00AA7AEC /* Info.plist */,
@@ -138,6 +141,7 @@
 			files = (
 				9EBF0FB620265AEE00AA7AEC /* ViewController.swift in Sources */,
 				9EBF0FB420265AEE00AA7AEC /* AppDelegate.swift in Sources */,
+				98E05AA2202667920034D5B5 /* EditViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
