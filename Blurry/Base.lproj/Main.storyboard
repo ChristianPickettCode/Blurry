@@ -19,20 +19,31 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X2m-fK-tuk">
-                                <rect key="frame" x="70" y="469" width="234" height="66"/>
+                                <rect key="frame" x="16" y="611" width="170" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Open Camera"/>
                                 <connections>
                                     <action selector="openCameraButtonWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dkf-Eh-JdA"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yFm-y3-mu9">
+                                <rect key="frame" x="276" y="23" width="88" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveButtWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9AP-Bj-t8B"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c98-lp-r0L">
-                                <rect key="frame" x="70" y="563" width="234" height="70"/>
+                                <rect key="frame" x="194" y="611" width="170" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.95612913541944144" green="0.94725785817022357" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="tintColor" red="1" green="0.046545039428554702" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Open Photo Library">
                                     <color key="titleShadowColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -42,20 +53,17 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a16-xm-qT3">
-                                <rect key="frame" x="0.0" y="83" width="375" height="338"/>
+                                <rect key="frame" x="0.0" y="65" width="375" height="481"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yFm-y3-mu9">
-                                <rect key="frame" x="271" y="34" width="96" height="41"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fEj-Bx-DZb">
+                                <rect key="frame" x="16" y="554" width="348" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.95537688885785355" blue="0.99917401530142802" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <state key="normal" title="Save">
-                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Background Blur">
+                                    <color key="titleColor" red="0.98513058443188151" green="1" blue="0.96998822680941987" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
-                                <connections>
-                                    <action selector="saveButtWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9AP-Bj-t8B"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.32013034326424872" green="0.32013034326424872" blue="0.32013034326424872" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -72,31 +80,10 @@
         <!--Edit View Controller-->
         <scene sceneID="5za-7V-j6m">
             <objects>
-                <viewController id="hsO-Pb-7U9" customClass="EditViewController" customModule="Blurry" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Zl6-5n-rlN">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Pic1" translatesAutoresizingMaskIntoConstraints="NO" id="5mU-re-W4f">
-                                <rect key="frame" x="0.0" y="37" width="375" height="485"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fEj-Bx-DZb">
-                                <rect key="frame" x="16" y="578" width="343" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Background Blur"/>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="juu-Je-gkJ"/>
-                    </view>
-                </viewController>
+                <viewController id="hsO-Pb-7U9" customClass="EditViewController" customModule="Blurry" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aKc-UP-DzB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="688.79999999999995" y="125.4872563718141"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="Pic1" width="1024" height="682"/>
-    </resources>
 </document>
