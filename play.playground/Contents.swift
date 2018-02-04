@@ -8,6 +8,7 @@ var image = UIImage(named: "pic1.png")!
 var H = Int(image.size.height)
 var W = Int(image.size.width)
 
+//"reads" the picture
 extension UIImage {
     func pixelData() -> [UInt8]? {
         let size = self.size
@@ -29,10 +30,12 @@ extension UIImage {
     }
 }
 
+//stores the picture in a array (rgbArray) --> 1 pixel has 4 values
 var rgbArray : [UInt8] =  image.pixelData()!
 var arr: [[Int]] = Array(repeating: Array(repeating: 0, count: W*4), count: H)
 var x : Int = 0
 
+//creates 2d array arr
 for i in 0...H-1 {
     for j in 0...(W*4)-1 {
         arr[i][j] = Int(rgbArray[x])
