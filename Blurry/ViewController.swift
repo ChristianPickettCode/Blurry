@@ -72,7 +72,6 @@ UINavigationControllerDelegate
             lastPoint = currentPoint
         }
     }
-
     
     @IBAction func openCameraButton(sender: AnyObject) {
         if UIImagePickerController.isSourceTypeAvailable(.camera) {
@@ -113,7 +112,7 @@ UINavigationControllerDelegate
     }
     
     @IBAction func btn(_ sender: Any) {
-        
+
     }
     
 }
