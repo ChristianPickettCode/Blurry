@@ -7,10 +7,12 @@
 //
 
 import UIKit
+import CoreImage
 
 class ViewController: UIViewController,
 UIImagePickerControllerDelegate,
-UINavigationControllerDelegate {
+UINavigationControllerDelegate
+{
     
     @IBOutlet weak var imagePicked: UIImageView!
     var prevPoint1: CGPoint!
@@ -25,10 +27,10 @@ UINavigationControllerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        width = 3.0
-        red = (0.0/255.0)
-        green = (0.0/255.0)
-        blue = (0.0/255.0)
+        width = 1.0
+        red = (255.0/255.0)
+        green = (255.0/255.0)
+        blue = (255.0/255.0)
         alpha = 1.0
     }
     
