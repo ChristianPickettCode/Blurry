@@ -13,6 +13,64 @@ UIImagePickerControllerDelegate,
 UINavigationControllerDelegate {
     
     @IBOutlet weak var imagePicked: UIImageView!
+    var prevPoint1: CGPoint!
+    var prevPoint2: CGPoint!
+    var lastPoint:CGPoint!
+    
+    var width: CGFloat!
+    var red:CGFloat!
+    var green:CGFloat!
+    var blue:CGFloat!
+    var alpha: CGFloat!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        width = 3.0
+        red = (0.0/255.0)
+        green = (0.0/255.0)
+        blue = (0.0/255.0)
+        alpha = 1.0
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        if let touch = touches.first {
+            prevPoint1 = touch.previousLocation(in:self.view)
+            prevPoint2 = touch.previousLocation(in:self.view)
+            lastPoint = touch.location(in:self.view)
+        }
+    }
+    
+    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+        if let touch = touches.first {
+            let currentPoint = touch.location(in: view)
+            prevPoint2 = prevPoint1
+            prevPoint1 = touch.previousLocation(in: self.view)
+            
+            UIGraphicsBeginImageContext(imagePicked.frame.size)
+            guard let context = UIGraphicsGetCurrentContext() else {
+                return
+            }
+            
+            context.move(to:prevPoint2)
+            context.addQuadCurve(to: prevPoint1, control: prevPoint2)
+            context.setLineCap(.butt)
+            context.setLineWidth(width)
+            context.setStrokeColor(red: red, green: green, blue: blue, alpha: 1.0)
+            context.setBlendMode(.normal)
+            context.strokePath()
+            
+            imagePicked.image?.draw(in: CGRect(x: 0, y: 0, width: imagePicked.frame.size.width, height: imagePicked.frame.size.height), blendMode: .overlay, alpha: 1.0)
+            imagePicked.image = UIGraphicsGetImageFromCurrentImageContext()
+            
+            UIGraphicsEndImageContext()
+            lastPoint = currentPoint
+        }
+    }
+
     
     @IBAction func openCameraButton(sender: AnyObject) {
         if UIImagePickerController.isSourceTypeAvailable(.camera) {
@@ -52,18 +110,6 @@ UINavigationControllerDelegate {
         alert.show()
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        //test
-        
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
     @IBAction func btn(_ sender: Any) {
         
     }
