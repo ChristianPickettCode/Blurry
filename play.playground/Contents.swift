@@ -47,7 +47,7 @@ for i in 0...H-1 {
 
 
 func main(a: [[Int]]) -> [[Int]] {
-    var kernel_mean: [[Double]] = [[1.0/9.0, 1.0/9.0, 1.0/9.0], [1.0/9.0, 1.0/9.0, 1.0/9.0], [1.0/9.0, 1.0/9.0, 1.0/9.0]]
+    var kernel_mean: [[Double]] = Array(repeating: Array(repeating: 1.0/9.0, count: a[0].count), count: a.count)
     
     var newA: [[Int]] = [[]]
     newA = convolution(a: a, kernel: kernel_mean)
@@ -181,7 +181,7 @@ func convolution(a:[[Int]], kernel:[[Double]]) -> [[Int]] {
 }
 
 
-arr = main(a: arr)
+//arr = main(a: arr)
 
 
 
@@ -190,7 +190,7 @@ var v: Int = 0
 
 for i in 0...arr.count - 1 {
     for j in 0...arr[i].count - 1 {
-        rgbArray[v] = UInt8(arr[i][j])
+        rgbArray[v] = UInt8(Int(Double(arr[i][j]) * (1.0/9.0)))
         v = v + 1
     }
 }

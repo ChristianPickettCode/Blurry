@@ -12,7 +12,6 @@
 		9EBF0FB920265AEE00AA7AEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EBF0FB720265AEE00AA7AEC /* Main.storyboard */; };
 		9EBF0FBB20265AEE00AA7AEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EBF0FBA20265AEE00AA7AEC /* Assets.xcassets */; };
 		9EBF0FBE20265AEE00AA7AEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EBF0FBC20265AEE00AA7AEC /* LaunchScreen.storyboard */; };
-		F0D6E0102026EE73000813D7 /* bk.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F0D6E00F2026EE73000813D7 /* bk.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +22,6 @@
 		9EBF0FBA20265AEE00AA7AEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9EBF0FBD20265AEE00AA7AEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9EBF0FBF20265AEE00AA7AEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F0D6E00F2026EE73000813D7 /* bk.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bk.jpg; path = ../../bk.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +57,6 @@
 				9EBF0FB320265AEE00AA7AEC /* AppDelegate.swift */,
 				9EBF0FB520265AEE00AA7AEC /* ViewController.swift */,
 				9EBF0FB720265AEE00AA7AEC /* Main.storyboard */,
-				F0D6E00F2026EE73000813D7 /* bk.jpg */,
 				9EBF0FBA20265AEE00AA7AEC /* Assets.xcassets */,
 				9EBF0FBC20265AEE00AA7AEC /* LaunchScreen.storyboard */,
 				9EBF0FBF20265AEE00AA7AEC /* Info.plist */,
@@ -128,7 +125,6 @@
 			files = (
 				9EBF0FBE20265AEE00AA7AEC /* LaunchScreen.storyboard in Resources */,
 				9EBF0FBB20265AEE00AA7AEC /* Assets.xcassets in Resources */,
-				F0D6E0102026EE73000813D7 /* bk.jpg in Resources */,
 				9EBF0FB920265AEE00AA7AEC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
