@@ -77,13 +77,5 @@
             </objects>
             <point key="canvasLocation" x="-82.400000000000006" y="126.38680659670166"/>
         </scene>
-        <!--Edit View Controller-->
-        <scene sceneID="5za-7V-j6m">
-            <objects>
-                <viewController id="hsO-Pb-7U9" customClass="EditViewController" customModule="Blurry" customModuleProvider="target" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="aKc-UP-DzB" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="688.79999999999995" y="125.4872563718141"/>
-        </scene>
     </scenes>
 </document>
